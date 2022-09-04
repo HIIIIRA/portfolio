@@ -1,0 +1,45 @@
+@use "../../setting" as s;
+@use "../../global" as g;
+
+header {
+    &.dream {
+        align-items: center;
+        .header-inner {
+            position: relative;
+            .logo {
+                top: -9px;
+                left: 10px;
+
+                @include g.titlelogo-stroke();
+                @include g.res("sp") {
+                    width: 100vw;
+                }
+            }
+            .menu-wrapper {
+                @include g.abs-vertical();
+                right: 0;
+                display: flex;
+                color: s.$white;
+
+                .menu {
+                    @include g.margin-32(left);
+                    @include g.margin-32(right);
+                    display: flex;
+                    align-items: center;
+
+                    &.is-left {
+                        @include g.text-menu-header();
+                        @include g.res("sp") {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    &.dream {
+    }
+}

@@ -1,0 +1,14 @@
+@use "../../global/mixin/text" as text;
+
+.index {
+    padding: 20px;
+    h1 {
+    }
+
+    .page-name {
+        @include text.index-link-text;
+    }
+
+    .page-link {
+    }
+}

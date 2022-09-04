@@ -1,0 +1,20 @@
+@use "../setting" as s;
+
+header {
+    position: fixed;
+    width: 100vw;
+    .header-inner {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    &.dream {
+        height: 50px;
+        background-color: s.$black;
+    }
+}
+
+.in-header {
+    position: absolute;
+}

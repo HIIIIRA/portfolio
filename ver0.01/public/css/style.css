@@ -1,0 +1,141 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+main {
+  padding-top: 120px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header.dream {
+  align-items: center;
+}
+header.dream .header-inner {
+  position: relative;
+}
+header.dream .header-inner .logo {
+  top: -9px;
+  left: 10px;
+  font-family: Avenir, "Helvetica neue", Helvetica, "游ゴシック体", YuGothic, "游ゴシック", sans-serif;
+  font-size: 96px;
+  font-weight: bold;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: white;
+}
+@media screen and (max-width: 428px) {
+  header.dream .header-inner .logo {
+    width: 100vw;
+  }
+}
+header.dream .header-inner .menu-wrapper {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  right: 0;
+  display: flex;
+  color: white;
+}
+header.dream .header-inner .menu-wrapper .menu {
+  margin-left: 32px;
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 428px) {
+  header.dream .header-inner .menu-wrapper .menu {
+    margin-left: 8px;
+  }
+}
+@media screen and (max-width: 428px) {
+  header.dream .header-inner .menu-wrapper .menu {
+    margin-right: 8px;
+  }
+}
+header.dream .header-inner .menu-wrapper .menu.is-left {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.07em;
+}
+@media screen and (max-width: 428px) {
+  header.dream .header-inner .menu-wrapper .menu.is-left {
+    display: none;
+  }
+}
+
+.dream .swiper--wrapper {
+  /* wrapperのサイズを調整 */
+  width: 100%;
+  height: 300px;
+}
+.dream .swiper-slide {
+  /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+  color: black;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 300px;
+}
+.dream .swiper-slide:nth-child(3n+1) {
+  /*1、4、7、3n+1枚目の背景色 */
+  background-color: #de4439;
+}
+.dream .swiper-slide:nth-child(3n+2) {
+  /*2、5、8、3n+2枚目の背景色 */
+  background-color: #fcd500;
+}
+.dream .swiper-slide:nth-child(3n+3) {
+  /*3、6、9、3n+3枚目の背景色 */
+  background-color: #53c638;
+}
+.dream .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 0 0 10px !important;
+  background: #333 !important;
+}
+.dream .swiper-pagination-bullet:first-child {
+  margin: 0 !important;
+}
+
+.index {
+  padding: 20px;
+}
+.index .page-name {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.07em;
+}
+header {
+  position: fixed;
+  width: 100vw;
+}
+header .header-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+header.dream {
+  height: 50px;
+  background-color: black;
+}
+
+.in-header {
+  position: absolute;
+}
+/*# sourceMappingURL=maps/style.css.map */

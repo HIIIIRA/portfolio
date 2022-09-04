@@ -1,0 +1,26 @@
+@use "../../setting" as s;
+
+@mixin title {
+    font-family: s.$font-engtitle;
+}
+
+@mixin titlelogo-stroke($outer: s.$black, $inner: s.$white, $size: 96px) {
+    font-family: s.$font-engtitle;
+    font-size: $size;
+    font-weight: bold;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: $outer;
+    -webkit-text-fill-color: $inner;
+}
+
+@mixin text-menu-header() {
+    font-family: s.$font-text;
+    font-size: 12px;
+    letter-spacing: 0.07em;
+}
+
+@mixin index-link-text() {
+    font-family: s.$font-text;
+    font-size: 36px;
+    letter-spacing: 0.07em;
+}
