@@ -212,11 +212,12 @@
                         .text {
                             font-family: setting.$gothic;
                             font-size: 18px;
-                            font-weight: 400;
+                            font-weight: 500;
                             color: setting.$black;
                             writing-mode: vertical-rl;
                             text-orientation: upright;
                             @include res.res(sp) {
+                                font-weight: 400;
                                 font-size: 12px;
                             }
                         }
