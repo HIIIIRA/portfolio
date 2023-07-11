@@ -77,16 +77,24 @@
                 .contents-wrapper {
                     position: relative;
                     perspective: 500px;
+                    @include res.res(sp) {
+                        //transform: rotateY(-50deg);
+                    }
                     display: flex;
                     align-items: center;
                     &.is--hovering::after {
                         content: "";
                         position: absolute;
                         right: 0;
-                        bottom: 2%;
-                        height: 96%;
+                        // bottom: 2%;
+                        // height: 96%;
+                        height: 100%;
                         border-right: 2px solid setting.$black;
                         transition-duration: 0.1s;
+                        @include res.res(sp) {
+                            bottom: 6%;
+                            height: 88%;
+                        }
                     }
                     &.is--not::after {
                         content: "";
@@ -101,13 +109,16 @@
                 .content {
                     @include mixin.padding-16(right);
                     width: 100%;
-
+                    z-index: 5;
                     transform-origin: 0% 50%;
                     transition-duration: 0.1s;
                     &.is--hovering {
                         transition-duration: 0.1s;
                         transition-timing-function: ease-in;
-                        transform: rotateY(4deg);
+                        transform: rotateY(5deg);
+                        @include res.res(sp) {
+                            transform: rotateY(21deg);
+                        }
                     }
                     .top {
                         display: flex;
@@ -145,7 +156,7 @@
                         }
                     }
                     .content-title {
-                        @include mixin.title();
+                        @include mixin.top-title();
                         color: setting.$black;
                         width: 100%;
                         display: block;
@@ -169,11 +180,12 @@
                     position: absolute;
                     //display: none;
                     right: -20px;
-                    top: 2%;
-                    padding: 8px;
-                    height: 96%;
-
-                    width: 4%;
+                    padding: 16px;
+                    // top: 2%;
+                    // height: 96%;
+                    height: 100%;
+                    width: 15%;
+                    perspective: 500px;
                     transition-duration: 0.1s;
                     transform-origin: 100% 50%;
                     transform: rotateY(235deg);
@@ -181,20 +193,32 @@
                     border: 1px solid setting.$black;
                     border-right: none;
                     //border-left: 4px solid setting.$black;
+                    @include res.res(sp) {
+                        padding: 4px;
+                        width: 20%;
+                        height: 88%;
+                        top: 6%;
+                    }
                     a {
                         height: 100%;
                         width: 100%;
                         text-align: center;
                         display: flex;
                         align-items: center;
-                        justify-content: center;
+                        justify-content: flex-end;
+                        @include res.res(sp) {
+                            justify-content: center;
+                        }
                         .text {
                             font-family: setting.$gothic;
-                            font-size: 14px;
+                            font-size: 18px;
                             font-weight: 400;
                             color: setting.$black;
                             writing-mode: vertical-rl;
                             text-orientation: upright;
+                            @include res.res(sp) {
+                                font-size: 12px;
+                            }
                         }
                     }
                 }
@@ -204,7 +228,10 @@
                             //display: block;
                             right: 0;
                             transition-duration: 0.1s;
-                            transform: rotateY(-50deg);
+                            transform: rotateY(-70deg);
+                            @include res.res(sp) {
+                                transform: rotateY(-50deg);
+                            }
                         }
                     }
                 }

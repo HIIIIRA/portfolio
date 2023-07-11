@@ -20,15 +20,37 @@
         font-size: 16px;
     }
 }
-@mixin title() {
+@mixin top-title() {
     font-family: font.$serif;
     font-size: 32px;
     letter-spacing: 0.06em;
     @include responsive.res("tb") {
-        font-size: 16px;
+        font-size: 24px;
     }
     @include responsive.res("sp") {
-        font-size: 16px;
+        font-size: 20px;
+    }
+}
+@mixin title() {
+    font-family: font.$serif;
+    font-size: 48px;
+    letter-spacing: 0.06em;
+    @include responsive.res("tb") {
+        font-size: 32px;
+    }
+    @include responsive.res("sp") {
+        font-size: 32px;
+    }
+}
+@mixin subTitle() {
+    font-family: font.$serif;
+    font-size: 24px;
+    letter-spacing: 0.06em;
+    @include responsive.res("tb") {
+        font-size: 24px;
+    }
+    @include responsive.res("sp") {
+        font-size: 20px;
     }
 }
 @mixin tags() {
@@ -40,10 +62,10 @@
     background-color: color.$black;
 
     @include responsive.res("tb") {
-        font-size: 11px;
+        font-size: 14px;
     }
     @include responsive.res("sp") {
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 @mixin discription() {
@@ -54,10 +76,24 @@
     line-height: 1.4em;
 
     @include responsive.res("tb") {
-        font-size: 11px;
+        font-size: 14px;
     }
     @include responsive.res("sp") {
-        font-size: 11px;
+        font-size: 12px;
+    }
+}
+@mixin making-detail() {
+    font-family: font.$gothic;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    line-height: 1.6em;
+
+    @include responsive.res("tb") {
+        font-size: 16px;
+    }
+    @include responsive.res("sp") {
+        font-size: 14px;
     }
 }
 

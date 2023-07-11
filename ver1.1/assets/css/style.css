@@ -419,18 +419,18 @@ select {
 }
 .body-contents-detail main .middle .title {
   font-family: "Noto Serif JP", "游ゴシック体", YuGothic, "游ゴシック", serif;
-  font-size: 32px;
+  font-size: 48px;
   letter-spacing: 0.06em;
   color: #1e1e1e;
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .body-contents-detail main .middle .title {
-    font-size: 16px;
+    font-size: 32px;
   }
 }
 @media screen and (max-width: 500px) {
   .body-contents-detail main .middle .title {
-    font-size: 16px;
+    font-size: 32px;
   }
 }
 .body-contents-detail main .middle .tags {
@@ -448,12 +448,12 @@ select {
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .body-contents-detail main .middle .tags {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 500px) {
   .body-contents-detail main .middle .tags {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
@@ -486,55 +486,126 @@ select {
     padding-right: 8px;
   }
 }
-.body-contents-detail main .middle .discription {
+.body-contents-detail main .middle .subTitle {
+  font-family: "Noto Serif JP", "游ゴシック体", YuGothic, "游ゴシック", serif;
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  font-size: 20px;
+  margin-top: 16px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .subTitle {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .subTitle {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .subTitle {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .subTitle {
+    margin-top: 8px;
+  }
+}
+.body-contents-detail main .middle .discription-wrapper {
   margin-top: 16px;
   padding-left: 32px;
   padding-right: 32px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .discription-wrapper {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .discription-wrapper {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .discription-wrapper {
+    padding-left: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .discription-wrapper {
+    padding-left: 16px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .discription-wrapper {
+    padding-right: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .discription-wrapper {
+    padding-right: 16px;
+  }
+}
+.body-contents-detail main .middle .discription-wrapper .making-detail {
+  font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 1.6em;
+  margin-top: 32px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .discription-wrapper .making-detail {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .discription-wrapper .making-detail {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .discription-wrapper .making-detail {
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .discription-wrapper .making-detail {
+    margin-top: 8px;
+  }
+}
+.body-contents-detail main .middle .discription-wrapper .making-detail.centered {
+  text-align: center;
+}
+.body-contents-detail main .discription {
   font-family: "Noto Serif JP", "游ゴシック体", YuGothic, "游ゴシック", serif;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.05em;
   line-height: 1.4em;
   color: #1e1e1e;
+  margin-top: 16px;
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
-  .body-contents-detail main .middle .discription {
+  .body-contents-detail main .discription {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .discription {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .discription {
     margin-top: 12px;
   }
 }
 @media screen and (max-width: 500px) {
-  .body-contents-detail main .middle .discription {
+  .body-contents-detail main .discription {
     margin-top: 8px;
-  }
-}
-@media screen and (min-width: 501px) and (max-width: 850px) {
-  .body-contents-detail main .middle .discription {
-    padding-left: 24px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .body-contents-detail main .middle .discription {
-    padding-left: 16px;
-  }
-}
-@media screen and (min-width: 501px) and (max-width: 850px) {
-  .body-contents-detail main .middle .discription {
-    padding-right: 24px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .body-contents-detail main .middle .discription {
-    padding-right: 16px;
-  }
-}
-@media screen and (min-width: 501px) and (max-width: 850px) {
-  .body-contents-detail main .middle .discription {
-    font-size: 11px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .body-contents-detail main .middle .discription {
-    font-size: 11px;
   }
 }
 .body-contents-detail main .youtube {
@@ -794,10 +865,15 @@ select {
   content: "";
   position: absolute;
   right: 0;
-  bottom: 2%;
-  height: 96%;
+  height: 100%;
   border-right: 2px solid #1e1e1e;
   transition-duration: 0.1s;
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .contents-wrapper.is--hovering::after {
+    bottom: 6%;
+    height: 88%;
+  }
 }
 .body-top main .main-middle section .contents-wrapper.is--not::after {
   content: "";
@@ -811,6 +887,7 @@ select {
 .body-top main .main-middle section .content {
   padding-right: 16px;
   width: 100%;
+  z-index: 5;
   transform-origin: 0% 50%;
   transition-duration: 0.1s;
 }
@@ -827,7 +904,12 @@ select {
 .body-top main .main-middle section .content.is--hovering {
   transition-duration: 0.1s;
   transition-timing-function: ease-in;
-  transform: rotateY(4deg);
+  transform: rotateY(5deg);
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .content.is--hovering {
+    transform: rotateY(21deg);
+  }
 }
 .body-top main .main-middle section .content .top {
   display: flex;
@@ -898,12 +980,12 @@ select {
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .body-top main .main-middle section .content .content-title {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 500px) {
   .body-top main .main-middle section .content .content-title {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 .body-top main .main-middle section .content .content-tags {
@@ -921,12 +1003,12 @@ select {
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .body-top main .main-middle section .content .content-tags {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 500px) {
   .body-top main .main-middle section .content .content-tags {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
@@ -969,26 +1051,34 @@ select {
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .body-top main .main-middle section .content .content-discription {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 500px) {
   .body-top main .main-middle section .content .content-discription {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 .body-top main .main-middle section .link-toDetail-wrapper {
   position: absolute;
   right: -20px;
-  top: 2%;
-  padding: 8px;
-  height: 96%;
-  width: 4%;
+  padding: 16px;
+  height: 100%;
+  width: 15%;
+  perspective: 500px;
   transition-duration: 0.1s;
   transform-origin: 100% 50%;
   transform: rotateY(235deg);
   border: 1px solid #1e1e1e;
   border-right: none;
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .link-toDetail-wrapper {
+    padding: 4px;
+    width: 20%;
+    height: 88%;
+    top: 6%;
+  }
 }
 .body-top main .main-middle section .link-toDetail-wrapper a {
   height: 100%;
@@ -996,20 +1086,35 @@ select {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .link-toDetail-wrapper a {
+    justify-content: center;
+  }
 }
 .body-top main .main-middle section .link-toDetail-wrapper a .text {
   font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   color: #1e1e1e;
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .link-toDetail-wrapper a .text {
+    font-size: 12px;
+  }
+}
 .body-top main .main-middle section .contents-wrapper.is--hovering .link-toDetail-wrapper {
   right: 0;
   transition-duration: 0.1s;
-  transform: rotateY(-50deg);
+  transform: rotateY(-70deg);
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .contents-wrapper.is--hovering .link-toDetail-wrapper {
+    transform: rotateY(-50deg);
+  }
 }
 .body-top main .main-middle section .luma {
   width: 100%;
@@ -1158,12 +1263,12 @@ select {
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .body-top main .main-right .right {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 500px) {
   .body-top main .main-right .right {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
