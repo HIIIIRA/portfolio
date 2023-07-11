@@ -1,0 +1,76 @@
+@use "../../setting/font" as font;
+@use "../../setting/color" as color;
+@use "../faundation/responsive" as responsive;
+
+@mixin vertical-text() {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+@mixin type() {
+    @include vertical-text();
+    font-family: font.$serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: color.$black;
+    @include responsive.res("tb") {
+        font-size: 16px;
+    }
+    @include responsive.res("sp") {
+        font-size: 16px;
+    }
+}
+@mixin title() {
+    font-family: font.$serif;
+    font-size: 32px;
+    letter-spacing: 0.06em;
+    @include responsive.res("tb") {
+        font-size: 16px;
+    }
+    @include responsive.res("sp") {
+        font-size: 16px;
+    }
+}
+@mixin tags() {
+    font-family: font.$gothic;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: color.$white;
+    background-color: color.$black;
+
+    @include responsive.res("tb") {
+        font-size: 11px;
+    }
+    @include responsive.res("sp") {
+        font-size: 11px;
+    }
+}
+@mixin discription() {
+    font-family: font.$serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    line-height: 1.4em;
+
+    @include responsive.res("tb") {
+        font-size: 11px;
+    }
+    @include responsive.res("sp") {
+        font-size: 11px;
+    }
+}
+
+@mixin vertical-title() {
+    @include vertical-text();
+    font-family: font.$gothic;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: color.$black;
+    background-color: color.$gray;
+
+    @include responsive.res("tb") {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,253 @@
+@use "../setting" as setting;
+@use "../global/mixin/" as mixin;
+@use "../global/base/responsive" as res;
+
+.body-top {
+    background-color: setting.$white;
+    .under-header {
+        display: none;
+        height: 32px;
+        @include res.res("sp") {
+            display: block;
+        }
+    }
+    height: 100%;
+    @include res.res("sp") {
+        height: auto;
+    }
+    main {
+        @include mixin.margin-32(left);
+        @include mixin.margin-32(right);
+
+        display: flex;
+        height: 80%;
+        .main-left {
+            //width: 10%;
+            @include res.res("sp") {
+                display: none;
+            }
+            @include mixin.margin-16(right);
+            @include mixin.margin-32(top);
+            .works-title {
+                @include mixin.vertical-text();
+                font-family: setting.$gothic;
+                font-size: 80px;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                color: setting.$white;
+                background-color: setting.$black;
+
+                @include res.res("tb") {
+                    font-size: 40px;
+                }
+                @include mixin.padding-8(top);
+                @include mixin.padding-8(left);
+                @include mixin.padding-8(right);
+                @include mixin.padding-8(bottom);
+            }
+        }
+        .main-middle {
+            //height: 83vh;
+            @include res.res("sp") {
+                height: 100%;
+            }
+            overflow-y: scroll;
+            /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+            -ms-overflow-style: none;
+            /*Firefoxへの対応*/
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            width: 60%;
+            @include res.res("sp") {
+                width: 100%;
+            }
+            section {
+                width: 100%;
+                @include mixin.margin-64(top);
+                .content-wrapper {
+                    display: flex;
+                    width: 100%;
+                }
+                .content-type {
+                    @include mixin.margin-8(right);
+                    @include mixin.type();
+                }
+                .content {
+                    @include mixin.padding-16(right);
+                    width: 100%;
+                    border-right: 2px solid setting.$black;
+                    .top {
+                        display: flex;
+                        width: 100%;
+                    }
+                    .middle {
+                        display: flex;
+                    }
+                    .bottom {
+                        display: flex;
+                        width: 100%;
+                        @include mixin.margin-8(top);
+
+                        .img-wrapper {
+                            width: 200%;
+                        }
+                    }
+                    .img-wrapper {
+                        &.is-vertical {
+                            width: 30%;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            .pathdot-img-right {
+                                @include mixin.margin-8(bottom);
+                            }
+                        }
+                    }
+                    .textbox {
+                        &.is-right {
+                            @include mixin.margin-16(left);
+                        }
+                        &.is-left {
+                            @include mixin.margin-16(right);
+                        }
+                    }
+                    .content-title {
+                        @include mixin.title();
+                        color: setting.$black;
+                        width: 100%;
+                        display: block;
+                    }
+                    .content-tags {
+                        display: inline-block;
+                        @include mixin.tags();
+
+                        @include mixin.margin-8(top);
+                        @include mixin.margin-8(bottom);
+                        @include mixin.padding-16(left);
+                        @include mixin.padding-16(right);
+                    }
+                    .content-discription {
+                        @include mixin.discription();
+                        color: setting.$black;
+                    }
+                }
+                .toDetail {
+                    @include mixin.margin-8(top);
+                    @include mixin.margin-32(right);
+                    padding-right: 3px;
+                    position: relative;
+                    display: flex;
+                    justify-content: flex-end;
+                    a {
+                        font-family: setting.$gothic;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: setting.$black;
+                    }
+                    img {
+                        position: absolute;
+                        height: 1em;
+                        width: auto;
+                        right: 8%;
+                        opacity: 0;
+                        transform: translate3d(0, 0, 0);
+                        animation: arrowmove-sp 3s ease-in infinite;
+                        @include res.res("pc") {
+                            right: 10%;
+                            animation: arrowmove 3s ease-in infinite;
+                        }
+                    }
+                    @keyframes arrowmove {
+                        0% {
+                            opacity: 0;
+                            right: 8%;
+                        }
+                        10% {
+                            opacity: 1;
+                        }
+                        50% {
+                            opacity: 0;
+                            right: 6%;
+                        }
+                        100% {
+                            opacity: 0;
+                        }
+                    }
+                    @keyframes arrowmove-sp {
+                        0% {
+                            opacity: 0;
+                            right: 10%;
+                        }
+                        10% {
+                            opacity: 1;
+                        }
+                        50% {
+                            opacity: 0;
+                            right: 8%;
+                        }
+                        100% {
+                            opacity: 0;
+                        }
+                    }
+                }
+                .luma {
+                    width: 100%;
+                    @include mixin.margin-8(bottom);
+
+                    img {
+                        margin-left: 4%;
+                        width: 22%;
+                        &.first {
+                            margin: 0 0;
+                        }
+                    }
+                }
+                .pathdot-img {
+                    width: 70%;
+                    height: auto;
+                    @include mixin.margin-8(right);
+                }
+
+                &.space {
+                    height: 0px;
+                }
+            }
+        }
+        .main-right {
+            width: 30%;
+            overflow-y: scroll;
+            /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+            -ms-overflow-style: none;
+            /*Firefoxへの対応*/
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            @include mixin.padding-16(left);
+            @include mixin.padding-32(top);
+            @include res.res("sp") {
+                display: none;
+            }
+            .content {
+                @include mixin.margin-16(bottom);
+                display: flex;
+            }
+            .left {
+                //height: 100%;
+                @include mixin.left-title();
+                @include mixin.padding-8(left);
+                @include mixin.padding-8(right);
+                @include mixin.padding-16(top);
+                @include mixin.padding-16(bottom);
+                @include mixin.margin-8(right);
+                text-align: center;
+            }
+            .right {
+                @include mixin.discription();
+                margin: auto 0;
+            }
+        }
+    }
+}

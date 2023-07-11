@@ -1,0 +1,41 @@
+@use "../setting" as setting;
+@use "../global/mixin/" as mixin;
+@use "../global/faundation/responsive" as res;
+
+header {
+    box-sizing: border-box;
+    @include mixin.padding-16(top);
+    @include mixin.padding-16(left);
+    @include mixin.padding-16(right);
+
+    background-color: setting.$white;
+    z-index: 10;
+    height: 15%;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    @include res.res("sp") {
+        height: 60px;
+        position: fixed;
+    }
+    .header-wrapper {
+        height: 100%;
+        width: 100%;
+        @include mixin.padding-8(bottom);
+        display: flex;
+        align-items: flex-end;
+        border-bottom: 1px solid setting.$black;
+    }
+    a {
+        height: 100%;
+    }
+    img {
+        //width: 500px;
+        height: 100%;
+        left: 0;
+        @include res.res("sp") {
+            width: 200px;
+        }
+    }
+}

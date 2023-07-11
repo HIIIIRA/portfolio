@@ -1,0 +1,142 @@
+@use "../setting" as setting;
+@use "../global/mixin/" as mixin;
+@use "../global/faundation/responsive" as res;
+
+.body-contents-detail {
+    background-color: setting.$white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .horizontal {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        &.is-half {
+            .right {
+                width: 55%;
+            }
+            .left {
+                width: 41%;
+            }
+        }
+        &.is-gw {
+            .right {
+                width: 38%;
+            }
+            .left {
+                width: 56.5%;
+            }
+        }
+        .right {
+            @include mixin.margin-16(left);
+        }
+        .main {
+            width: 64%;
+        }
+    }
+    .vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &.sub {
+            width: 30%;
+            .img-bottom {
+                @include mixin.margin-16(top);
+            }
+        }
+    }
+
+    header {
+        position: fixed;
+    }
+    .under-header {
+        height: 126px;
+        @include res.res("sp") {
+            height: 60px;
+        }
+    }
+    main {
+        width: 80%;
+        .top {
+            width: 100%;
+            @include mixin.margin-32(top);
+
+            .img-wrapper {
+                max-width: 700px;
+                margin: 0 auto;
+            }
+            &.luma {
+                width: 100%;
+                display: flex;
+                @include mixin.margin-8(bottom);
+
+                img {
+                    margin-left: 4%;
+                    width: 22%;
+                    &.first {
+                        margin: 0 0;
+                    }
+                }
+            }
+            &.is--second {
+                @include mixin.margin-120(top);
+            }
+        }
+
+        .middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @include mixin.margin-32(top);
+            .title {
+                @include mixin.title();
+                color: setting.$black;
+            }
+            .tags {
+                display: inline-block;
+                @include mixin.tags();
+
+                @include mixin.margin-8(top);
+                @include mixin.margin-8(bottom);
+                @include mixin.padding-16(left);
+                @include mixin.padding-16(right);
+            }
+            .discription {
+                @include mixin.margin-16(top);
+                @include mixin.padding-32(left);
+                @include mixin.padding-32(right);
+                @include mixin.discription();
+                color: setting.$black;
+            }
+        }
+        .youtube {
+            @include mixin.margin-64(top);
+            display: flex;
+            justify-content: center;
+        }
+        .bottom {
+            @include mixin.margin-64(top);
+
+            width: 100%;
+        }
+    }
+    footer {
+        @include mixin.margin-32(top);
+        border-top: 1px solid setting.$black;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        a {
+            font-family: setting.$gothic;
+            font-size: 14px;
+            font-weight: 700;
+            color: setting.$black;
+            @include mixin.margin-8(top);
+            @include mixin.margin-32(right);
+        }
+    }
+}

@@ -1,0 +1,269 @@
+@use "../setting" as setting;
+@use "../global/mixin/" as mixin;
+@use "../global/faundation/responsive" as res;
+
+.body-top {
+    background-color: setting.$white;
+    .under-header {
+        display: none;
+        height: 32px;
+        @include res.res("sp") {
+            display: block;
+        }
+    }
+    height: 100%;
+    @include res.res("sp") {
+        height: auto;
+    }
+    main {
+        @include mixin.margin-32(left);
+        @include mixin.margin-32(right);
+
+        display: flex;
+        height: 80%;
+        .main-left {
+            //width: 10%;
+            @include res.res("sp") {
+                display: none;
+            }
+            @include mixin.margin-16(right);
+            @include mixin.margin-32(top);
+            .works-title {
+                @include mixin.vertical-text();
+                font-family: setting.$gothic;
+                font-size: 80px;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                color: setting.$white;
+                background-color: setting.$black;
+
+                @include res.res("tb") {
+                    font-size: 40px;
+                }
+                @include mixin.padding-8(top);
+                @include mixin.padding-8(left);
+                @include mixin.padding-8(right);
+                @include mixin.padding-8(bottom);
+            }
+        }
+        .main-middle {
+            //height: 83vh;
+            @include res.res("sp") {
+                height: 100%;
+            }
+            overflow-y: scroll;
+            /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+            -ms-overflow-style: none;
+            /*Firefoxへの対応*/
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            width: 60%;
+            @include res.res("sp") {
+                width: 100%;
+            }
+            section {
+                width: 100%;
+                @include mixin.margin-64(top);
+                .section-inner {
+                    display: flex;
+                    width: 100%;
+                }
+                .content-type {
+                    @include mixin.margin-8(right);
+                    @include mixin.type();
+                }
+                .contents-wrapper {
+                    position: relative;
+                    perspective: 500px;
+                    display: flex;
+                    align-items: center;
+                    &.is--hovering::after {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: 2%;
+                        height: 96%;
+                        border-right: 2px solid setting.$black;
+                        transition-duration: 0.1s;
+                    }
+                    &.is--not::after {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        height: 100%;
+                        transition-duration: 0.1s;
+                        border-right: 2px solid setting.$black;
+                    }
+                }
+                .content {
+                    @include mixin.padding-16(right);
+                    width: 100%;
+
+                    transform-origin: 0% 50%;
+                    transition-duration: 0.1s;
+                    &.is--hovering {
+                        transition-duration: 0.1s;
+                        transition-timing-function: ease-in;
+                        transform: rotateY(4deg);
+                    }
+                    .top {
+                        display: flex;
+                        width: 100%;
+                    }
+                    .middle {
+                        display: flex;
+                    }
+                    .bottom {
+                        display: flex;
+                        width: 100%;
+                        @include mixin.margin-8(top);
+
+                        .img-wrapper {
+                            width: 200%;
+                        }
+                    }
+                    .img-wrapper {
+                        &.is-vertical {
+                            width: 30%;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            .pathdot-img-right {
+                                @include mixin.margin-8(bottom);
+                            }
+                        }
+                    }
+                    .textbox {
+                        &.is-right {
+                            @include mixin.margin-16(left);
+                        }
+                        &.is-left {
+                            @include mixin.margin-16(right);
+                        }
+                    }
+                    .content-title {
+                        @include mixin.title();
+                        color: setting.$black;
+                        width: 100%;
+                        display: block;
+                    }
+                    .content-tags {
+                        display: inline-block;
+                        @include mixin.tags();
+
+                        @include mixin.margin-8(top);
+                        @include mixin.margin-8(bottom);
+                        @include mixin.padding-16(left);
+                        @include mixin.padding-16(right);
+                    }
+                    .content-discription {
+                        @include mixin.discription();
+                        color: setting.$black;
+                    }
+                }
+
+                .link-toDetail-wrapper {
+                    position: absolute;
+                    //display: none;
+                    right: -20px;
+                    top: 2%;
+                    padding: 8px;
+                    height: 96%;
+
+                    width: 4%;
+                    transition-duration: 0.1s;
+                    transform-origin: 100% 50%;
+                    transform: rotateY(235deg);
+
+                    border: 1px solid setting.$black;
+                    border-right: none;
+                    //border-left: 4px solid setting.$black;
+                    a {
+                        height: 100%;
+                        width: 100%;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .text {
+                            font-family: setting.$gothic;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: setting.$black;
+                            writing-mode: vertical-rl;
+                            text-orientation: upright;
+                        }
+                    }
+                }
+                .contents-wrapper {
+                    &.is--hovering {
+                        .link-toDetail-wrapper {
+                            //display: block;
+                            right: 0;
+                            transition-duration: 0.1s;
+                            transform: rotateY(-50deg);
+                        }
+                    }
+                }
+                .luma {
+                    width: 100%;
+                    @include mixin.margin-8(bottom);
+
+                    img {
+                        margin-left: 4%;
+                        width: 22%;
+                        &.first {
+                            margin: 0 0;
+                        }
+                    }
+                }
+                .pathdot-img {
+                    width: 70%;
+                    height: auto;
+                    @include mixin.margin-8(right);
+                }
+
+                &.space {
+                    height: 0px;
+                }
+            }
+        }
+        .main-right {
+            width: 30%;
+            overflow-y: scroll;
+            /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+            -ms-overflow-style: none;
+            /*Firefoxへの対応*/
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            @include mixin.padding-16(left);
+            @include mixin.padding-32(top);
+            @include res.res("sp") {
+                display: none;
+            }
+            .content {
+                @include mixin.margin-16(bottom);
+                display: flex;
+            }
+            .left {
+                //height: 100%;
+                @include mixin.vertical-title();
+                @include mixin.padding-8(left);
+                @include mixin.padding-8(right);
+                @include mixin.padding-16(top);
+                @include mixin.padding-16(bottom);
+                @include mixin.margin-8(right);
+                text-align: center;
+            }
+            .right {
+                @include mixin.discription();
+                margin: auto 0;
+            }
+        }
+    }
+}

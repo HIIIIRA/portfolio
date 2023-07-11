@@ -1,0 +1,1248 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Noto+Serif+JP:wght@600;700&display=swap");
+/* --------------------------------------------------------------------*/
+/* --------------------------------------------------------------------*/
+/* --------------------------------------------------------------------*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  box-sizing: border-box;
+  letter-spacing: 0;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+span {
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+.body-contents-detail {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body-contents-detail .horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.body-contents-detail .horizontal.is-half .right {
+  width: 55%;
+}
+.body-contents-detail .horizontal.is-half .left {
+  width: 41%;
+}
+.body-contents-detail .horizontal.is-gw .right {
+  width: 38%;
+}
+.body-contents-detail .horizontal.is-gw .left {
+  width: 56.5%;
+}
+.body-contents-detail .horizontal .right {
+  margin-left: 16px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail .horizontal .right {
+    margin-left: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail .horizontal .right {
+    margin-left: 8px;
+  }
+}
+.body-contents-detail .horizontal .main {
+  width: 64%;
+}
+.body-contents-detail .vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.body-contents-detail .vertical.sub {
+  width: 30%;
+}
+.body-contents-detail .vertical.sub .img-bottom {
+  margin-top: 16px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail .vertical.sub .img-bottom {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail .vertical.sub .img-bottom {
+    margin-top: 8px;
+  }
+}
+.body-contents-detail header {
+  position: fixed;
+  height: auto;
+}
+.body-contents-detail .under-header {
+  height: 126px;
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail .under-header {
+    height: 60px;
+  }
+}
+.body-contents-detail main {
+  width: 80%;
+}
+.body-contents-detail main .top {
+  width: 100%;
+  margin-top: 32px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .top {
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .top {
+    margin-top: 8px;
+  }
+}
+.body-contents-detail main .top .img-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.body-contents-detail main .top.luma {
+  width: 100%;
+  display: flex;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .top.luma {
+    margin-bottom: 8px;
+  }
+}
+.body-contents-detail main .top.luma img {
+  margin-left: 4%;
+  width: 22%;
+}
+.body-contents-detail main .top.luma img.first {
+  margin: 0 0;
+}
+.body-contents-detail main .top.is--second {
+  margin-top: 120px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .top.is--second {
+    margin-top: 80px;
+  }
+}
+.body-contents-detail main .middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle {
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle {
+    margin-top: 8px;
+  }
+}
+.body-contents-detail main .middle .title {
+  font-family: "Noto Serif JP", "游ゴシック体", YuGothic, "游ゴシック", serif;
+  font-size: 32px;
+  letter-spacing: 0.06em;
+  color: #1e1e1e;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .title {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .title {
+    font-size: 16px;
+  }
+}
+.body-contents-detail main .middle .tags {
+  display: inline-block;
+  font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #f5f5f5;
+  background-color: #1e1e1e;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .tags {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .tags {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .tags {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .tags {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .tags {
+    padding-left: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .tags {
+    padding-left: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .tags {
+    padding-right: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .tags {
+    padding-right: 8px;
+  }
+}
+.body-contents-detail main .middle .discription {
+  margin-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-family: "Noto Serif JP", "游ゴシック体", YuGothic, "游ゴシック", serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 1.4em;
+  color: #1e1e1e;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .discription {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .discription {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .discription {
+    padding-left: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .discription {
+    padding-left: 16px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .discription {
+    padding-right: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .discription {
+    padding-right: 16px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .middle .discription {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .middle .discription {
+    font-size: 11px;
+  }
+}
+.body-contents-detail main .youtube {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .youtube {
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .youtube {
+    margin-top: 40px;
+  }
+}
+.body-contents-detail main .bottom {
+  margin-top: 64px;
+  width: 100%;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail main .bottom {
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail main .bottom {
+    margin-top: 40px;
+  }
+}
+.body-contents-detail footer {
+  margin-top: 32px;
+  border-top: 1px solid #1e1e1e;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail footer {
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail footer {
+    margin-top: 8px;
+  }
+}
+.body-contents-detail footer a {
+  font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin-top: 8px;
+  margin-right: 32px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail footer a {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-contents-detail footer a {
+    margin-right: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-contents-detail footer a {
+    margin-right: 8px;
+  }
+}
+
+.body-top {
+  background-color: #f5f5f5;
+  height: 100%;
+}
+.body-top .under-header {
+  display: none;
+  height: 32px;
+}
+@media screen and (max-width: 500px) {
+  .body-top .under-header {
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top {
+    height: auto;
+  }
+}
+.body-top main {
+  margin-left: 32px;
+  margin-right: 32px;
+  display: flex;
+  height: 80%;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main {
+    margin-left: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main {
+    margin-left: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main {
+    margin-right: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main {
+    margin-right: 8px;
+  }
+}
+.body-top main .main-left {
+  margin-right: 16px;
+  margin-top: 32px;
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-left {
+    display: none;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-left {
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-left {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-left {
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-left {
+    margin-top: 8px;
+  }
+}
+.body-top main .main-left .works-title {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #f5f5f5;
+  background-color: #1e1e1e;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-left .works-title {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-left .works-title {
+    padding-top: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-left .works-title {
+    padding-left: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-left .works-title {
+    padding-right: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-left .works-title {
+    padding-bottom: 8px;
+  }
+}
+.body-top main .main-middle {
+  overflow-y: scroll;
+  /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+  -ms-overflow-style: none;
+  /*Firefoxへの対応*/
+  scrollbar-width: none;
+  width: 60%;
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle {
+    height: 100%;
+  }
+}
+.body-top main .main-middle::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle {
+    width: 100%;
+  }
+}
+.body-top main .main-middle section {
+  width: 100%;
+  margin-top: 64px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section {
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section {
+    margin-top: 40px;
+  }
+}
+.body-top main .main-middle section .content-wrapper {
+  display: flex;
+  width: 100%;
+}
+.body-top main .main-middle section .content-type {
+  margin-right: 8px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: "Noto Serif JP", "游ゴシック体", YuGothic, "游ゴシック", serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #1e1e1e;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content-type {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content-type {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .content-type {
+    font-size: 16px;
+  }
+}
+.body-top main .main-middle section .content {
+  padding-right: 16px;
+  width: 100%;
+  border-right: 2px solid #1e1e1e;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content {
+    padding-right: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .content {
+    padding-right: 8px;
+  }
+}
+.body-top main .main-middle section .content .top {
+  display: flex;
+  width: 100%;
+}
+.body-top main .main-middle section .content .middle {
+  display: flex;
+}
+.body-top main .main-middle section .content .bottom {
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content .bottom {
+    margin-top: 8px;
+  }
+}
+.body-top main .main-middle section .content .bottom .img-wrapper {
+  width: 200%;
+}
+.body-top main .main-middle section .content .img-wrapper.is-vertical {
+  width: 30%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.body-top main .main-middle section .content .img-wrapper.is-vertical .pathdot-img-right {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content .img-wrapper.is-vertical .pathdot-img-right {
+    margin-bottom: 8px;
+  }
+}
+.body-top main .main-middle section .content .textbox.is-right {
+  margin-left: 16px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content .textbox.is-right {
+    margin-left: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .content .textbox.is-right {
+    margin-left: 8px;
+  }
+}
+.body-top main .main-middle section .content .textbox.is-left {
+  margin-right: 16px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content .textbox.is-left {
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .content .textbox.is-left {
+    margin-right: 8px;
+  }
+}
+.body-top main .main-middle section .content .content-title {
+  font-family: "Noto Serif JP", "游ゴシック体", YuGothic, "游ゴシック", serif;
+  font-size: 32px;
+  letter-spacing: 0.06em;
+  color: #1e1e1e;
+  width: 100%;
+  display: block;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content .content-title {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .content .content-title {
+    font-size: 16px;
+  }
+}
+.body-top main .main-middle section .content .content-tags {
+  display: inline-block;
+  font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #f5f5f5;
+  background-color: #1e1e1e;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content .content-tags {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .content .content-tags {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content .content-tags {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content .content-tags {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content .content-tags {
+    padding-left: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .content .content-tags {
+    padding-left: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content .content-tags {
+    padding-right: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .content .content-tags {
+    padding-right: 8px;
+  }
+}
+.body-top main .main-middle section .content .content-discription {
+  font-family: "Noto Serif JP", "游ゴシック体", YuGothic, "游ゴシック", serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 1.4em;
+  color: #1e1e1e;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .content .content-discription {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .content .content-discription {
+    font-size: 11px;
+  }
+}
+.body-top main .main-middle section .toDetail {
+  margin-top: 8px;
+  margin-right: 32px;
+  padding-right: 3px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .toDetail {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .toDetail {
+    margin-right: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-middle section .toDetail {
+    margin-right: 8px;
+  }
+}
+.body-top main .main-middle section .toDetail a {
+  font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+.body-top main .main-middle section .toDetail img {
+  position: absolute;
+  height: 1em;
+  width: auto;
+  right: 8%;
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  animation: arrowmove-sp 3s ease-in infinite;
+}
+@media screen and (min-width: 851px) {
+  .body-top main .main-middle section .toDetail img {
+    right: 10%;
+    animation: arrowmove 3s ease-in infinite;
+  }
+}
+@keyframes arrowmove {
+  0% {
+    opacity: 0;
+    right: 8%;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    right: 6%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes arrowmove-sp {
+  0% {
+    opacity: 0;
+    right: 10%;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    right: 8%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.body-top main .main-middle section .luma {
+  width: 100%;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .luma {
+    margin-bottom: 8px;
+  }
+}
+.body-top main .main-middle section .luma img {
+  margin-left: 4%;
+  width: 22%;
+}
+.body-top main .main-middle section .luma img.first {
+  margin: 0 0;
+}
+.body-top main .main-middle section .pathdot-img {
+  width: 70%;
+  height: auto;
+  margin-right: 8px;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-middle section .pathdot-img {
+    margin-right: 8px;
+  }
+}
+.body-top main .main-middle section.space {
+  height: 0px;
+}
+.body-top main .main-right {
+  width: 30%;
+  overflow-y: scroll;
+  /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+  -ms-overflow-style: none;
+  /*Firefoxへの対応*/
+  scrollbar-width: none;
+  padding-left: 16px;
+  padding-top: 32px;
+}
+.body-top main .main-right::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-right {
+    padding-left: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-right {
+    padding-left: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-right {
+    padding-top: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-right {
+    padding-top: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-right {
+    display: none;
+  }
+}
+.body-top main .main-right .content {
+  margin-bottom: 16px;
+  display: flex;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-right .content {
+    margin-bottom: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-right .content {
+    margin-bottom: 8px;
+  }
+}
+.body-top main .main-right .left {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #1e1e1e;
+  background-color: #cacaca;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-right: 8px;
+  text-align: center;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-right .left {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-right .left {
+    padding-left: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-right .left {
+    padding-right: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-right .left {
+    padding-top: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-right .left {
+    padding-top: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-right .left {
+    padding-bottom: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-right .left {
+    padding-bottom: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-right .left {
+    margin-right: 8px;
+  }
+}
+.body-top main .main-right .right {
+  font-family: "Noto Serif JP", "游ゴシック体", YuGothic, "游ゴシック", serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 1.4em;
+  margin: auto 0;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .body-top main .main-right .right {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .body-top main .main-right .right {
+    font-size: 11px;
+  }
+}
+
+header {
+  border-bottom: 1px solid #1e1e1e;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  background-color: #f5f5f5;
+  z-index: 10;
+  height: 15%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  header {
+    padding-top: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    padding-top: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  header {
+    padding-left: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    padding-left: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  header {
+    padding-right: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    padding-right: 8px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  header {
+    padding-bottom: 8px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    height: 60px;
+    position: fixed;
+  }
+}
+header a {
+  height: 100%;
+}
+header img {
+  height: 100%;
+  left: 0;
+}
+@media screen and (max-width: 500px) {
+  header img {
+    width: 200px;
+  }
+}/*# sourceMappingURL=style.css.map */
