@@ -698,29 +698,31 @@ select {
   }
 }
 .body-top main {
-  margin-left: 32px;
-  margin-right: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   height: 80%;
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .body-top main {
-    margin-left: 24px;
+    padding-left: 24px;
   }
 }
 @media screen and (max-width: 500px) {
   .body-top main {
-    margin-left: 8px;
+    padding-left: 16px;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .body-top main {
-    margin-right: 24px;
+    padding-right: 24px;
   }
 }
 @media screen and (max-width: 500px) {
   .body-top main {
-    margin-right: 8px;
+    padding-right: 16px;
   }
 }
 .body-top main .main-left {
@@ -1064,7 +1066,7 @@ select {
   right: -20px;
   padding: 16px;
   height: 100%;
-  width: 15%;
+  width: 12%;
   perspective: 500px;
   transition-duration: 0.1s;
   transform-origin: 100% 50%;
@@ -1324,6 +1326,8 @@ header {
 header .header-wrapper {
   height: 100%;
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   padding-bottom: 8px;
   display: flex;
   align-items: flex-end;

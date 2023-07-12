@@ -16,9 +16,10 @@
         height: auto;
     }
     main {
-        @include mixin.margin-32(left);
-        @include mixin.margin-32(right);
-
+        @include mixin.padding-32(left);
+        @include mixin.padding-32(right);
+        max-width: 1400px;
+        margin: 0 auto;
         display: flex;
         height: 80%;
         .main-left {
@@ -184,7 +185,7 @@
                     // top: 2%;
                     // height: 96%;
                     height: 100%;
-                    width: 15%;
+                    width: 12%;
                     perspective: 500px;
                     transition-duration: 0.1s;
                     transform-origin: 100% 50%;
